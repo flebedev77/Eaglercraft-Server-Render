@@ -1,0 +1,59 @@
+IceSiked:
+  Base:
+    world: world
+    X: 73.4138101416234
+    Y: 66.0
+    Z: 103.19980156230606
+  Taiga:
+    world: world
+    X: 3904.4186410293055
+    Y: 63.0
+    Z: -3568.9147132677513
+  Spawner:
+    world: world
+    X: 143.47793997540555
+    Y: 10.0
+    Z: 63.537654518463
+  Monument:
+    world: world
+    X: 358.8830002948464
+    Y: 63.0
+    Z: -4775.082146930459
+  Madder:
+    world: world
+    X: -5843.597849333
+    Y: 68.0
+    Z: -2365.629833212947
+AHHHHHHHHHHHHHHH:
+  Base:
+    world: world
+    X: 72.50345242623987
+    Y: 69.0
+    Z: 96.48549229213137
+  XP:
+    world: world
+    X: 143.85211688271795
+    Y: 77.0
+    Z: 0.2594679784610463
+  PenisHouse:
+    world: world
+    X: -1334.0344433372993
+    Y: 70.0
+    Z: -1196.3753542832683
+  Matthewlake:
+    world: world
+    X: -5882.508542378176
+    Y: 75.0
+    Z: -2342.5478333609226
+SCP:
+  SCP:
+    world: world
+    X: 4099.113297649896
+    Y: 65.0
+    Z: -3722.908406708524
+FentDealer:
+  monument:
+    world: world
+    X: 311.6799474401652
+    Y: 63.0
+    Z: -4837.10604437398

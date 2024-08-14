@@ -1,0 +1,30 @@
+[19:54:16] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[19:54:16] [Server thread/INFO]: Loading properties
+[19:54:16] [Server thread/INFO]: Default game type: SURVIVAL
+[19:54:17] [Server thread/INFO]: This server is running CraftBukkit version git-PaperSpigot-445 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[19:54:17] [Server thread/INFO]: Debug logging is disabled
+[19:54:17] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[19:54:17] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[19:54:17] [Server thread/INFO]: Using 4 threads for Netty based IO
+[19:54:17] [Server thread/INFO]: Data value allowed items: 
+[19:54:17] [Server thread/INFO]: Generating keypair
+[19:54:17] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:54:17] [Server thread/INFO]: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+[19:54:17] [Server thread/INFO]: Using epoll channel type
+[19:54:18] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[19:54:18] [Server thread/INFO]: Preparing level "world"
+[19:54:18] [Server thread/INFO]: -------- World Settings For [world] --------
+[19:54:18] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[19:54:18] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[19:54:18] [Server thread/INFO]: Random Lighting Updates: false
+[19:54:18] [Server thread/INFO]: Structure Info Saving: true
+[19:54:18] [Server thread/INFO]: Sending up to 10 chunks per packet
+[19:54:18] [Server thread/INFO]: Max Entity Collisions: 8
+[19:54:18] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[19:54:18] [Server thread/INFO]: Max TNT Explosions: 100
+[19:54:18] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[19:54:18] [Server thread/INFO]: Mob Spawn Range: 4
+[19:54:18] [Server thread/INFO]: Anti X-Ray: true
+[19:54:18] [Server thread/INFO]: 	Engine Mode: 1
+[19:54:18] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[19:54:18] [Server thread/INFO]: 	Replace Blocks: [1, 5]
