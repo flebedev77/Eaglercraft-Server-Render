@@ -14,9 +14,18 @@ config-version: 8
 settings:
   debug: false
   save-user-cache-on-stop-only: false
-  netty-threads: 4
-  sample-count: 12
+  moved-too-quickly-threshold: 100.0
+  moved-wrongly-threshold: 0.0625
+  filter-creative-items: true
+  int-cache-limit: 1024
   player-shuffle: 0
+  bungeecord: true
+  sample-count: 12
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./start.sh
+  late-bind: false
+  user-cache-size: 1000
   attribute:
     maxHealth:
       max: 2048.0
@@ -24,25 +33,7 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  user-cache-size: 1000
-  int-cache-limit: 1024
-  bungeecord: true
-  late-bind: false
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: ./start.sh
-  moved-wrongly-threshold: 0.0625
-  filter-creative-items: true
-  moved-too-quickly-threshold: 100.0
-timings:
-  enabled: true
-  verbose: true
-  server-name-privacy: false
-  hidden-config-entries:
-  - database
-  - settings.bungeecord-addresses
-  history-interval: 300
-  history-length: 3600
+  netty-threads: 4
 messages:
   whitelist: You are not whitelisted on this server!
   unknown-command: Unknown command. Type "/help" for help.
@@ -52,7 +43,7 @@ messages:
   restart: Server is restarting
 commands:
   tab-complete: 0
-  log: true
+  silent-commandblock-console: false
   spam-exclusions:
   - /skill
   replace-commands:
@@ -60,63 +51,50 @@ commands:
   - summon
   - testforblock
   - tellraw
-  silent-commandblock-console: false
+  log: true
+timings:
+  enabled: true
+  verbose: true
+  server-name-privacy: false
+  hidden-config-entries:
+  - database
+  - settings.bungeecord-addresses
+  history-interval: 300
+  history-length: 3600
 stats:
   disable-saving: false
   forced-stats: {}
 world-settings:
   default:
     verbose: true
-    chunks-per-tick: 650
-    clear-tick-list: false
-    item-despawn-rate: 6000
     enable-zombie-pigmen-portal-spawns: true
-    arrow-despawn-rate: 1200
+    view-distance: 4
+    item-despawn-rate: 6000
     merge-radius:
       item: 2.5
       exp: 3.0
-    view-distance: 4
-    zombie-aggressive-towards-villager: true
+    arrow-despawn-rate: 1200
+    wither-spawn-sound-radius: 0
+    chunks-per-tick: 650
+    clear-tick-list: false
+    hanging-tick-frequency: 100
+    max-entity-collisions: 8
+    dragon-death-sound-radius: 0
     seed-village: 10387312
     seed-feature: 14357617
-    max-bulk-chunks: 10
-    max-entity-collisions: 8
+    zombie-aggressive-towards-villager: true
     max-tnt-per-tick: 100
-    max-tick-time:
-      tile: 50
-      entity: 50
-    nerf-spawner-mobs: false
-    mob-spawn-range: 4
-    growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      wheat-modifier: 100
-      netherwart-modifier: 100
-    entity-tracking-range:
-      players: 48
-      animals: 48
-      monsters: 48
-      misc: 32
-      other: 64
     save-structure-info: true
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
-    random-light-updates: false
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 8
-    hopper-amount: 1
+    max-bulk-chunks: 10
     hunger:
       walk-exhaustion: 0.2
       sprint-exhaustion: 0.8
       combat-exhaustion: 0.3
       regen-exhaustion: 3.0
+    max-tick-time:
+      tile: 50
+      entity: 50
+    random-light-updates: false
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -137,6 +115,28 @@ world-settings:
       replace-blocks:
       - 1
       - 5
-    dragon-death-sound-radius: 0
-    wither-spawn-sound-radius: 0
-    hanging-tick-frequency: 100
+    mob-spawn-range: 4
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    hopper-amount: 1
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+    nerf-spawner-mobs: false
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
+    entity-tracking-range:
+      players: 48
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
